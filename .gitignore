@@ -1,0 +1,50 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build artifacts
+dist/
+build/
+frontend/dist/
+frontend/node_modules/
+
+# Logs and Debug
+*.log
+schema_log.txt
+schema_out.txt
+docx_output.txt
+docx_output_utf8.txt
+frontend/build_error.txt
+frontend/build_output.txt
+frontend/build_error_utf8.txt
+frontend/build_output_utf8.txt
+frontend/dev_debug.txt
+frontend/dev_output.txt
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Project-specific unused files
+docs/
+gosmart_ultimate_documentation.docx
+explore.py
+read_docx.py
+test_api.py
+"WhatsApp Image 2026-02-13 at 6.44.05 PM.jpeg"
+
+# VS Code
+.vscode/
