@@ -3,8 +3,10 @@
 set -o errexit
 
 # --- Frontend Build ---
-echo "Building Frontend..."
+echo "Building Frontend (Node 20+)..."
 cd frontend
+# Remove local lockfiles that might cause native binding issues on Linux
+rm -rf node_modules package-lock.json
 npm install
 npm run build
 cd ..
@@ -15,6 +17,4 @@ pip install --upgrade pip
 pip install -r requirements.txt
 
 # --- Data Preparation ---
-# Note: For Render Free Tier, we ensure the graph is ready.
-# If you have a cached graph, make sure it's in the repo or downloaded here.
 python backend/init_osm_data.py
