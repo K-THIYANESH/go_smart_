@@ -17,4 +17,5 @@ pip install --upgrade pip
 pip install -r requirements.txt
 
 # --- Data Preparation ---
-python backend/init_osm_data.py
+# OSM data is now pre-generated and committed to the repository to avoid Render OOM/timeouts.
+# python backend/init_osm_data.py
