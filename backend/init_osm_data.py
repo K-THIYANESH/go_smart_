@@ -11,9 +11,9 @@ def init_osm_data():
     
     graph_path = os.path.join(cache_dir, "chennai_drive.graphml")
     
-    print(f"Downloading optimized Chennai graph for Free Tier (Radius: 5km)...")
+    print(f"Downloading optimized Chennai graph for Free Tier (Radius: 2km)...")
     # Use 'drive' network type for multimodal walking/transit routing
-    G = ox.graph_from_address(location, dist=5000, network_type='drive')
+    G = ox.graph_from_address(location, dist=2000, network_type='drive')
     
     print(f"Saving graph to {graph_path}...")
     ox.save_graphml(G, graph_path)
